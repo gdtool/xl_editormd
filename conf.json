@@ -1,0 +1,10 @@
+{
+    "name": "Editor.md - Markdown 编辑器",
+    "brief": "Editor.md 是一款 Markdown 在线编辑器。<br/><a href='https://bbs.uhila.com/thread-5.htm' target='_blank'><strong>插件说明及使用教程请点击</strong></a><br/><strong>Gitee 开源地址:</strong> <a href='https://gitee.com/xiulab/xl_editormd' target='_blank'>https://gitee.com/xiulab/xl_editormd</a>",
+    "version": "1.0.0",
+    "bbs_version": "4.0",
+    "installed": 0,
+    "enable": 0,
+    "hooks_rank": [],
+    "dependencies": []
+}
