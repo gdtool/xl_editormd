@@ -24,6 +24,12 @@
             height: '300px',
             imageUpload: true,
             imageUploadURL: '?attach-create.htm',
+            onload: function () {
+                // 引入插件 执行监听方法
+                editormd.loadPlugin('plugin/xl_editormd/editormd/plugins/image-handle-paste/image-handle-paste', function () {
+                    editor.imagePaste();
+                });
+            },
             path: 'plugin/xl_editormd/editormd/lib/'
         });
     })
