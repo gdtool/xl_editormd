@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="plugin/xl_editormd/editormd/css/editormd.min.css"/>
+<style>
+	.CodeMirror-placeholder { display: none; }
+</style>
 <script src="plugin/xl_editormd/editormd/editormd.min.js"></script>
 <script>
     $(function () {
@@ -12,6 +15,12 @@
         const data = msgDef.children('#message').val();
         msgDef.remove();
 
+        // emoji
+        editormd.emoji     = {
+            path  : "https://www.webfx.com/tools/emoji-cheat-sheet/graphics/emojis/",
+            ext   : ".png"
+        };
+
         // load editor.md
         const editor = editormd('md-editor', {
             mode: 'markdown',
@@ -22,6 +31,7 @@
             width: '100%',
 //            	height : '100%',
             height: '300px',
+            emoji: true,
             imageUpload: true,
             imageUploadURL: 'attach-create.htm',
             onload: function () {
