@@ -31,10 +31,10 @@
             //监听粘贴板事件
             $('#' + id).on('paste', function (e) {
                 var items = (e.clipboardData || e.originalEvent.clipboardData).items;
-                // console.log(items[0], items[1])
+//                 console.log(items[0], items[1])
 
                 //判断图片类型
-                if (items && (items[0].type.indexOf('image') > -1 || items[1].type.indexOf('image') > -1)) {
+                if (items && (items[0].type.indexOf('image') > -1 || (items[1] && items[1].type.indexOf('image') > -1))) {
                     if (items[0].type.indexOf('image') > -1) {
                         var file = items[0].getAsFile();
                     } else {
