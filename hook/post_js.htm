@@ -15,12 +15,6 @@
         const data = msgDef.children('#message').val();
         msgDef.remove();
 
-        // emoji
-        editormd.emoji     = {
-            path  : "https://www.webfx.com/tools/emoji-cheat-sheet/graphics/emojis/",
-            ext   : ".png"
-        };
-
         // load editor.md
         const editor = editormd('md-editor', {
             mode: 'markdown',
